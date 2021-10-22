@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./css/tailwind.min.css" rel="stylesheet" />
+    <link href="./css/fontawesome.all.min.css" rel="stylesheet" />
+    <link href="./css/custom.css" rel="stylesheet" />
+
+    <title>Dashboard</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto">
+      <p class="text-2xl ml-1 mt-4">
+        Di., 19. Oktober 2021 <span class="text-xl">22:30 Uhr</span>
+      </p>
+
+      <h1 class="text-7xl mb-16 upp">Dashboard</h1>
+
+      <h2 class="text-5xl uppercase mb-4">Hardware</h2>
+
+      <div class="grid grid-cols-4 gap-y-8 gap-x-32">
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.0.1')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-wifi fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Router</span><br />
+              <span>10.0.0.1</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.0.2')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-random fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">POE+ Switch</span
+              ><br />
+              <span>10.0.0.2</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.1.0')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-hdd fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Unraid</span><br />
+              <span>10.0.1.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-5xl uppercase mt-12 mb-4">Anwendungen</h2>
+
+      <div class="grid grid-cols-4 gap-y-8 gap-x-32">
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('https://wiki.meikmenzel.dev')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-book fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Wiki</span><br />
+              <span>wiki.meikmenzel.dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('https://bitwarden.meikmenzel.dev')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-key fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Bitwarden</span
+              ><br />
+              <span>bitwarden.meikmenzel.dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.1.1:81')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-road fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase"
+                >NGINX Proxy Manager</span
+              ><br />
+              <span>10.0.1.1:81</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.1.4')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-user-shield fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Adguard</span
+              ><br />
+              <span>10.0.1.4</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.1.X')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fab fa-docker fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Portainer</span
+              ><br />
+              <span>10.0.1.X</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('http://10.0.1.X')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fab fa-jenkins fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Jenkins</span
+              ><br />
+              <span>10.0.1.X</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-5xl uppercase mt-12 mb-4">Monitoring</h2>
+
+      <div class="grid grid-cols-4 gap-y-8 gap-x-32">
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('https://monitoring.meikmenzel.dev')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-chart-area fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Grafana</span
+              ><br />
+              <span>monitoring.meikmenzel.dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex cursor-pointer"
+          onclick="window.open('https://status.meikmenzel.dev')"
+        >
+          <div class="flex-initial flex items-center p-2">
+            <i class="fas fa-traffic-light fa-3x"></i>
+          </div>
+          <div class="flex-1 p-2 flex items-center">
+            <div>
+              <span class="text-3xl font-semibold uppercase">Statuspage</span
+              ><br />
+              <span>status.meikmenzel.dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-5xl mb-4 uppercase mt-12 mb-4">Links</h2>
+
+      <div class="grid grid-cols-5 gap-y-12">
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">Dev</h3>
+
+          <a href="https://github.com/" target="_blank">Github</a><br />
+          <a href="https://codepen.io/" target="_blank">Codepen</a><br />
+          <a href="https://www.npmjs.com/" target="_blank">NPM</a><br />
+          <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a
+          ><br />
+          <a href="https://fontawesome.com/" target="_blank">Font Awesome</a
+          ><br />
+          <a href="https://hub.docker.com/" target="_blank">Docker Hub</a><br />
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">3D Druck</h3>
+
+          <a href="https://www.thingiverse.com/" target="_blank">Thingiverse</a
+          ><br />
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">Media</h3>
+
+          <a href="https://www.youtube.com/" target="_blank">YouTube</a><br />
+          <a href="https://www.spotify.com/de/" target="_blank">Spotify</a
+          ><br />
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">Social Media</h3>
+
+          <a href="https://twitter.com/" target="_blank">Twitter</a><br />
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">Wikis</h3>
+
+          <a href="https://wikipedia.de" target="_blank">Wikipedia</a><br />
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">News</h3>
+
+          <a href="https://www.golem.de/" target="_blank">Golem</a><br />
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-2 uppercase">Games</h3>
+
+          <a href="https://www.mmoga.de/" target="_blank">MMOGA</a><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
