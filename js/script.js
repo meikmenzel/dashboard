@@ -34,6 +34,8 @@ function setDateAndTime() {
 
   document.getElementById("date").innerText = date;
   document.getElementById("time").innerText = time;
+
+  document.getElementById("year").innerText = year;
 }
 
 setDateAndTime();
