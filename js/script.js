@@ -13,12 +13,12 @@ const months = [
   "Dezember",
 ];
 
-const weekdays = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+const weekdays = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
 function setDateAndTime() {
   const d = new Date();
 
-  const weekday = weekdays[d.getUTCDay()];
+  const weekday = weekdays[d.getDay()];
   const day = d.getDate();
   const month = months[d.getMonth()];
   const year = d.getFullYear();
